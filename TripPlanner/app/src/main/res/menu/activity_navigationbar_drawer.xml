@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_car2"
+            android:title="Upcoming Trips" />
+        <item
+            android:onClick="goToPastTrips"
+            android:id="@+id/past_trip"
+            android:icon="@mipmap/ic_past"
+            android:title="Past Trips" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:onClick="showMap"
+                android:id="@+id/nav_map"
+                android:icon="@mipmap/ic_mepoo"
+                android:title="Map" />
+
+        </menu>
+    </item>
+
+</menu>

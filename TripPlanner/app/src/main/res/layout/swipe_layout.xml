@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/swipe"
+        app:leftEdgeSwipeOffset="0dp"
+        app:rightEdgeSwipeOffset="0dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/bottom_wraper"
+            android:layout_width="240dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Edit"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0076a5"
+                android:gravity="center"
+                android:text="View"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/Share"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#2cbb00"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/Delete"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff0000"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/bottom_wrapper1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/person_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_photo"
+            android:layout_centerHorizontal="true"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/startNavbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Name"
+            android:text="Start" />
+
+        <CheckBox
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Done" />
+
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>
+
+
+

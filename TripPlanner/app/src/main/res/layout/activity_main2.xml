@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    tools:context="com.example.sara.tripplanner.MainActivity2"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+       >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Trip "
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_margin="5dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+            >
+                    <TextView
+                        android:id="@+id/tripLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="bottom|left"
+                        android:paddingLeft="10dp"
+
+                        android:layout_margin="5dp"
+
+                        android:text="Trip Name" />
+
+                    <EditText
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+           >
+
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:paddingLeft="10dp"
+
+                android:text="TextView" />
+
+                <Button
+                    android:id="@+id/datebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_margin="5dp"
+                    android:text="Get Date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+
+         >
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_margin="5dp"
+                    android:text="TextView"/>
+
+            <Button
+                android:id="@+id/timebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_margin="5dp"
+
+                android:text="Get Time" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:weightSum="1"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="From" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/datebtn"
+                android:layout_toRightOf="@+id/datebtn"
+                android:background="@drawable/write_text"
+                android:drawablePadding="10dp"
+                android:hint="Enter Place Here"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:weightSum="1"
+                android:layout_margin="5dp"
+
+                android:layout_marginLeft="10dp"
+                android:text="To" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete2TextView"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_toEndOf="@+id/datebtn"
+                android:layout_toRightOf="@+id/datebtn"
+                android:background="@drawable/write_text"
+                android:drawablePadding="10dp"
+                android:hint="Enter Place Here"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:layout_margin="5dp"
+                android:textColor="@color/grey" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:id="@+id/noteLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timebtn"
+            android:layout_alignStart="@+id/timebtn"
+            android:layout_below="@+id/timebtn"
+            android:layout_marginTop="31dp"
+            android:layout_margin="5dp"
+            android:text="Note" />
+
+        <EditText
+            android:id="@+id/noteText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/noteLabel"
+            android:layout_alignBottom="@+id/noteLabel"
+            android:layout_alignLeft="@+id/autoCompleteTextView"
+            android:layout_alignStart="@+id/autoCompleteTextView"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/statuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/autoCompleteTextView"
+            android:layout_alignLeft="@+id/noteLabel"
+            android:layout_alignStart="@+id/noteLabel"
+            android:visibility="invisible" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scond Trip "
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+
+
+                    <TextView
+                        android:id="@+id/date2text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_margin="5dp"
+                        android:text="TextView" />
+
+                    <Button
+                        android:id="@+id/date2btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_margin="5dp"
+                        android:text="Get Date" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+
+                    <TextView
+                        android:layout_margin="5dp"
+
+                        android:id="@+id/time2Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:text="TextView"/>
+
+                    <Button
+                        android:layout_margin="5dp"
+
+                        android:id="@+id/time2btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:text="Get Time" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/text2View"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:weightSum="1"
+                        android:text="From" />
+
+                    <AutoCompleteTextView
+                        android:layout_margin="5dp"
+
+                        android:id="@+id/autoCompleteTextViewsf"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_toEndOf="@+id/datebtn"
+                        android:layout_toRightOf="@+id/datebtn"
+                        android:background="@drawable/write_text"
+                        android:drawablePadding="10dp"
+                        android:hint="Enter Place Here"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                >
+                    <TextView
+                        android:layout_margin="5dp"
+
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:weightSum="2"
+                        android:layout_marginLeft="10dp"
+                        android:text="To" />
+
+                <TextView
+                    android:id="@+id/statuse2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/autoCompleteTextView"
+                    android:layout_alignLeft="@+id/noteLabel"
+                    android:layout_alignStart="@+id/noteLabel"
+                    android:visibility="invisible" />
+
+                <AutoCompleteTextView
+                        android:layout_margin="5dp"
+
+                        android:id="@+id/autoComplete2TextViewst"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_toEndOf="@+id/datebtn"
+                        android:layout_toRightOf="@+id/datebtn"
+                        android:background="@drawable/write_text"
+                        android:drawablePadding="10dp"
+                        android:hint="Enter Place Here"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:id="@+id/noteLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/timebtn"
+                android:layout_alignStart="@+id/timebtn"
+                android:layout_below="@+id/timebtn"
+                android:layout_marginTop="31dp"
+                android:layout_margin="5dp"
+                android:text="Note" />
+
+            <EditText
+                android:id="@+id/noteText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/noteLabel"
+                android:layout_alignBottom="@+id/noteLabel"
+                android:layout_alignLeft="@+id/autoCompleteTextView"
+                android:layout_alignStart="@+id/autoCompleteTextView"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+
+
+            <Button
+                android:layout_margin="5dp"
+
+                android:id="@+id/logoutbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/send"
+                android:layout_toLeftOf="@+id/autoComplete2TextView"
+                android:layout_toStartOf="@+id/autoComplete2TextView"
+                android:text="Logout" />
+
+
+
+
+            <Button
+                android:layout_margin="5dp"
+
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:text="Send"
+                tools:ignore="OnClick" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_margin="5dp"
+
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:weightSum="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Enable Alarm" />
+
+            <Switch
+                android:layout_margin="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:text="Enable Alarm" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

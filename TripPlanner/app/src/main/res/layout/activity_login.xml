@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.example.sara.tripplanner.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+
+        >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="110dp"
+            android:src="@mipmap/tripicon" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/password"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="39dp"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/loginbtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginBottom="17dp"
+            android:hint="Enter Your Password"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/grey" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/sign_in_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+           android:layout_marginLeft="98dp"
+            android:background="@drawable/rounded_button"
+            android:text="Signin"
+            android:textColor="@color/white"/>
+
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/SignupText"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible" />
+
+
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:textAlignment="center"
+    >
+        <TextView
+            android:id="@+id/SignupText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/detail"
+            android:layout_alignLeft="@+id/detail"
+            android:layout_marginLeft="80dp"
+            android:layout_alignStart="@+id/detail"
+            android:text="No have Account?"
+            android:textAlignment="center"
+
+            android:textColor="@color/grey" />
+
+
+
+        <TextView
+            android:id="@+id/SignupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/detail"
+            android:layout_alignLeft="@+id/detail"
+
+            android:layout_alignStart="@+id/detail"
+            android:text="Signup here"
+            android:textAlignment="center"
+
+            android:textColor="@color/href" />
+</LinearLayout>
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/email"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/email"
+            android:layout_marginBottom="51dp"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+</LinearLayout>

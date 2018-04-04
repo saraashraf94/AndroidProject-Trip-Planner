@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TripPlanner</string>
+    <string name="title_activity_google_api_map">Map</string>
+    <string name="title_activity_navgetion">navgetion</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigationbar">navigationbar</string>
+    <string name="title_activity_drwable_layout">drwable_layout</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="facebook_app_id">2074077619504915</string>
+    <string name="fb_login_protocol_scheme">fb2074077619504915</string>
+</resources>

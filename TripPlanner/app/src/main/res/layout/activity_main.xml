@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sara.tripplanner.MainActivity">
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/tripLabel"
+        android:layout_toRightOf="@+id/tripLabel"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="Send"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/tripLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userName"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:text="Trip Name" />
+
+    <Button
+        android:id="@+id/datebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/datetext"
+        android:layout_alignBottom="@+id/datetext"
+        android:layout_alignLeft="@+id/tripLabel"
+        android:layout_alignStart="@+id/tripLabel"
+        android:text="Get Date" />
+
+    <TextView
+        android:id="@+id/datetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/send"
+        android:layout_toRightOf="@+id/send"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/timebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/datebtn"
+        android:layout_alignStart="@+id/datebtn"
+        android:layout_below="@+id/datebtn"
+        android:layout_marginTop="25dp"
+        android:text="Get Time" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/datetext"
+        android:layout_alignStart="@+id/datetext"
+        android:layout_below="@+id/datebtn"
+        android:layout_marginTop="28dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/noteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timebtn"
+        android:layout_alignStart="@+id/timebtn"
+        android:layout_below="@+id/timebtn"
+        android:layout_marginTop="31dp"
+        android:text="Note" />
+
+    <EditText
+        android:id="@+id/noteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/noteLabel"
+        android:layout_alignBottom="@+id/noteLabel"
+        android:layout_alignLeft="@+id/autoCompleteTextView"
+        android:layout_alignStart="@+id/autoCompleteTextView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/noteText"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/datebtn"
+        android:layout_toRightOf="@+id/datebtn"
+        android:background="@drawable/write_text"
+        android:drawablePadding="10dp"
+        android:hint="Enter Place Here"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/autoCompleteTextView"
+        android:layout_alignLeft="@+id/noteLabel"
+        android:layout_alignStart="@+id/noteLabel"
+        android:text="From" />
+
+
+
+    <TextView
+        android:id="@+id/statuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/autoCompleteTextView"
+        android:layout_alignLeft="@+id/noteLabel"
+        android:layout_alignStart="@+id/noteLabel"
+        android:visibility="invisible" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete2TextView"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/autoCompleteTextView"
+        android:layout_alignStart="@+id/autoCompleteTextView"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/write_text"
+        android:drawablePadding="10dp"
+        android:hint="Enter Place Here"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autoComplete2TextView"
+        android:layout_alignBottom="@+id/autoComplete2TextView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:text="To" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/send"
+        android:layout_toLeftOf="@+id/autoComplete2TextView"
+        android:layout_toStartOf="@+id/autoComplete2TextView"
+        android:text="Logout" />
+
+
+    <Button
+        android:id="@+id/mapbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/send"
+        android:layout_alignBottom="@+id/send"
+        android:layout_alignEnd="@+id/userName"
+        android:layout_alignRight="@+id/userName"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Map" />
+
+
+</RelativeLayout>
